@@ -1059,6 +1059,9 @@ def piecewise_fold(expr):
 
     Piecewise
     """
+    # for Jacobian calculus
+    return expr
+
     if not isinstance(expr, Basic) or not expr.has(Piecewise):
         return expr
 
